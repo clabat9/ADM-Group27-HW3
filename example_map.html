@@ -1,0 +1,2459 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_cd2ef6f7e3264f83bc3f6bbb4a781a6c {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_cd2ef6f7e3264f83bc3f6bbb4a781a6c" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_cd2ef6f7e3264f83bc3f6bbb4a781a6c = L.map(
+        'map_cd2ef6f7e3264f83bc3f6bbb4a781a6c', {
+        center: [29.7207902, -95.3440627149137],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_d9fb7bca8aba4e28a3941a7553082094 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+    
+
+            var circle_f1d90e8bec6b461c9eb32dd1db857be9 = L.circle(
+                [29.7207902, -95.3440627149137],
+                {
+  "bubblingMouseEvents": true,
+  "color": "darkgreen",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8000.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+            
+    
+        var marker_8d62f388bf18417992f29c08a64bb428 = L.marker(
+            [29.7207902, -95.3440627149137],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_ee54aef7ca1d4e10999566a06dbcafaf = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8d62f388bf18417992f29c08a64bb428.setIcon(icon_ee54aef7ca1d4e10999566a06dbcafaf);
+            
+    
+        var marker_4c52f14a55d24771bfd68a150b2da738 = L.marker(
+            [29.7207902, -95.3440627149137],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_183a72fdffad4fdc8b744a16f3c52479 = L.AwesomeMarkers.icon({
+                    icon: 'male',
+                    iconColor: 'white',
+                    markerColor: 'darkblue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4c52f14a55d24771bfd68a150b2da738.setIcon(icon_183a72fdffad4fdc8b744a16f3c52479);
+            
+    
+        var marker_b215284ac3ea4cdd9a46294ee2721ed7 = L.marker(
+            [29.6894518062607, -95.3932525448847],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_b09e17995e2e42df837d5e723f1db1d4 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b215284ac3ea4cdd9a46294ee2721ed7.setIcon(icon_b09e17995e2e42df837d5e723f1db1d4);
+            
+    
+            var popup_7ba039e202b441e999f5b1ee7207982e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_81253e46361b480dad42f5b4c22370fb = $('<div id="html_81253e46361b480dad42f5b4c22370fb" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16946736?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/16946736?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_7ba039e202b441e999f5b1ee7207982e.setContent(html_81253e46361b480dad42f5b4c22370fb);
+            
+
+            marker_b215284ac3ea4cdd9a46294ee2721ed7.bindPopup(popup_7ba039e202b441e999f5b1ee7207982e)
+            ;
+
+            
+        
+    
+        marker_b215284ac3ea4cdd9a46294ee2721ed7.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b7e358a01d9c40439da2791a80466455 = L.marker(
+            [29.7552121678677, -95.38133652865109],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_c83d92a9525e4f048b6c4b4a72d02e7d = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b7e358a01d9c40439da2791a80466455.setIcon(icon_c83d92a9525e4f048b6c4b4a72d02e7d);
+            
+    
+            var popup_291b5aac9234428c999a3125d50a308e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a48afb8addee49e49fa10e41dff18edb = $('<div id="html_a48afb8addee49e49fa10e41dff18edb" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14961842?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/14961842?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_291b5aac9234428c999a3125d50a308e.setContent(html_a48afb8addee49e49fa10e41dff18edb);
+            
+
+            marker_b7e358a01d9c40439da2791a80466455.bindPopup(popup_291b5aac9234428c999a3125d50a308e)
+            ;
+
+            
+        
+    
+        marker_b7e358a01d9c40439da2791a80466455.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_3ff01538387c4a65b8a03596e7b6e839 = L.marker(
+            [29.7197296502041, -95.3756615226312],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_bc94a6cd3c6b4ad5885f67150babea30 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3ff01538387c4a65b8a03596e7b6e839.setIcon(icon_bc94a6cd3c6b4ad5885f67150babea30);
+            
+    
+            var popup_f96f4d5aee2e4d81bff832224fec9b61 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1ab8908e7f6643c2936385c15019dc32 = $('<div id="html_1ab8908e7f6643c2936385c15019dc32" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/17142329?location=Alvin%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/17142329?location=Alvin%2C%20TX </a></div>')[0];
+                popup_f96f4d5aee2e4d81bff832224fec9b61.setContent(html_1ab8908e7f6643c2936385c15019dc32);
+            
+
+            marker_3ff01538387c4a65b8a03596e7b6e839.bindPopup(popup_f96f4d5aee2e4d81bff832224fec9b61)
+            ;
+
+            
+        
+    
+        marker_3ff01538387c4a65b8a03596e7b6e839.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_94bc990229364e6b8758323755e35870 = L.marker(
+            [29.705823182086394, -95.41364837264679],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_69cd15332a864b30a1262b69ec384ed9 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_94bc990229364e6b8758323755e35870.setIcon(icon_69cd15332a864b30a1262b69ec384ed9);
+            
+    
+            var popup_3c2ecb1064cd4088bc67cddadedb5469 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5a4085cfd05a4694a5e23daa46e77366 = $('<div id="html_5a4085cfd05a4694a5e23daa46e77366" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/18058914?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/18058914?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_3c2ecb1064cd4088bc67cddadedb5469.setContent(html_5a4085cfd05a4694a5e23daa46e77366);
+            
+
+            marker_94bc990229364e6b8758323755e35870.bindPopup(popup_3c2ecb1064cd4088bc67cddadedb5469)
+            ;
+
+            
+        
+    
+        marker_94bc990229364e6b8758323755e35870.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c2fc555c5aa14bfdbce7c21f4fe08631 = L.marker(
+            [29.7507481273452, -95.34822054658159],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_b4eaa1d96f55453e986fbf6726d2a0e5 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c2fc555c5aa14bfdbce7c21f4fe08631.setIcon(icon_b4eaa1d96f55453e986fbf6726d2a0e5);
+            
+    
+            var popup_91c922f6265f450cb05a2bd55ebb965b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_92c186cdac5245ef962e544cc32f44b5 = $('<div id="html_92c186cdac5245ef962e544cc32f44b5" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16578645?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/16578645?location=Baytown%2C%20TX </a></div>')[0];
+                popup_91c922f6265f450cb05a2bd55ebb965b.setContent(html_92c186cdac5245ef962e544cc32f44b5);
+            
+
+            marker_c2fc555c5aa14bfdbce7c21f4fe08631.bindPopup(popup_91c922f6265f450cb05a2bd55ebb965b)
+            ;
+
+            
+        
+    
+        marker_c2fc555c5aa14bfdbce7c21f4fe08631.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_5169cbb907ee451cbdf9853a849a856d = L.marker(
+            [29.6977913184243, -95.38837692818069],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_225a729e72534e65919d159922f34bde = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5169cbb907ee451cbdf9853a849a856d.setIcon(icon_225a729e72534e65919d159922f34bde);
+            
+    
+            var popup_1758dd66d41443f281f3b0b48adc098e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_acaff66619e146e8916dd52782cd5f7d = $('<div id="html_acaff66619e146e8916dd52782cd5f7d" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15314833?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/15314833?location=Baytown%2C%20TX </a></div>')[0];
+                popup_1758dd66d41443f281f3b0b48adc098e.setContent(html_acaff66619e146e8916dd52782cd5f7d);
+            
+
+            marker_5169cbb907ee451cbdf9853a849a856d.bindPopup(popup_1758dd66d41443f281f3b0b48adc098e)
+            ;
+
+            
+        
+    
+        marker_5169cbb907ee451cbdf9853a849a856d.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_7b4a77e878ec48a09234dd05c91a86f7 = L.marker(
+            [29.74591113855, -95.3035553374568],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_fa9a814ed54341d581fc2dac3f8cb898 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7b4a77e878ec48a09234dd05c91a86f7.setIcon(icon_fa9a814ed54341d581fc2dac3f8cb898);
+            
+    
+            var popup_d478ce5fff3a414392aab6ac5dff5615 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2970b55141e24490b95c9e398fe8ca66 = $('<div id="html_2970b55141e24490b95c9e398fe8ca66" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16577179?location=Channelview%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/16577179?location=Channelview%2C%20TX </a></div>')[0];
+                popup_d478ce5fff3a414392aab6ac5dff5615.setContent(html_2970b55141e24490b95c9e398fe8ca66);
+            
+
+            marker_7b4a77e878ec48a09234dd05c91a86f7.bindPopup(popup_d478ce5fff3a414392aab6ac5dff5615)
+            ;
+
+            
+        
+    
+        marker_7b4a77e878ec48a09234dd05c91a86f7.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_27ef228f59f14ce8a59193f9e7de1171 = L.marker(
+            [29.7206534111133, -95.27967307704849],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_2a6afc706d5e4e02b4d25f0f5ac2e5e4 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_27ef228f59f14ce8a59193f9e7de1171.setIcon(icon_2a6afc706d5e4e02b4d25f0f5ac2e5e4);
+            
+    
+            var popup_f6485695fd674ba5bc33b079af83b27e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_689c85dc96ba4be9ac3aa2664dde6249 = $('<div id="html_689c85dc96ba4be9ac3aa2664dde6249" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/19454562?location=Channelview%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/19454562?location=Channelview%2C%20TX </a></div>')[0];
+                popup_f6485695fd674ba5bc33b079af83b27e.setContent(html_689c85dc96ba4be9ac3aa2664dde6249);
+            
+
+            marker_27ef228f59f14ce8a59193f9e7de1171.bindPopup(popup_f6485695fd674ba5bc33b079af83b27e)
+            ;
+
+            
+        
+    
+        marker_27ef228f59f14ce8a59193f9e7de1171.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_e7dc01ba677249ccb57c4dd1fce37edf = L.marker(
+            [29.7197012550647, -95.27909145081689],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_e9da318740c94b0583bec63c7e5ffecf = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e7dc01ba677249ccb57c4dd1fce37edf.setIcon(icon_e9da318740c94b0583bec63c7e5ffecf);
+            
+    
+            var popup_918f4e24634f4221a810a25950362b8f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_803b9ed1d9874789b6e692231e318de9 = $('<div id="html_803b9ed1d9874789b6e692231e318de9" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/19508450?location=Channelview%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/19508450?location=Channelview%2C%20TX </a></div>')[0];
+                popup_918f4e24634f4221a810a25950362b8f.setContent(html_803b9ed1d9874789b6e692231e318de9);
+            
+
+            marker_e7dc01ba677249ccb57c4dd1fce37edf.bindPopup(popup_918f4e24634f4221a810a25950362b8f)
+            ;
+
+            
+        
+    
+        marker_e7dc01ba677249ccb57c4dd1fce37edf.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_bbbe6026df4f4481acd3a71d24668299 = L.marker(
+            [29.732658248299103, -95.3250448537964],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_54dcea17e21a464f9ad81c2d3aadb980 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bbbe6026df4f4481acd3a71d24668299.setIcon(icon_54dcea17e21a464f9ad81c2d3aadb980);
+            
+    
+            var popup_ba78ac25f41c4b99b5b7b7510eddb19a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2258589a53e84afe8d9efc9f897bde37 = $('<div id="html_2258589a53e84afe8d9efc9f897bde37" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15181769?location=Channelview%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/15181769?location=Channelview%2C%20TX </a></div>')[0];
+                popup_ba78ac25f41c4b99b5b7b7510eddb19a.setContent(html_2258589a53e84afe8d9efc9f897bde37);
+            
+
+            marker_bbbe6026df4f4481acd3a71d24668299.bindPopup(popup_ba78ac25f41c4b99b5b7b7510eddb19a)
+            ;
+
+            
+        
+    
+        marker_bbbe6026df4f4481acd3a71d24668299.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b326e38ccae7404fa87563696a17340d = L.marker(
+            [29.6769515120954, -95.28621054284109],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_a67d98cf8c3048d89eaec61d19212173 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b326e38ccae7404fa87563696a17340d.setIcon(icon_a67d98cf8c3048d89eaec61d19212173);
+            
+    
+            var popup_8370828de80c41bd83021ab245ef8735 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_25a2c64de6e146d9a07d2d3331bdf1c7 = $('<div id="html_25a2c64de6e146d9a07d2d3331bdf1c7" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/18390479?location=Channelview%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/18390479?location=Channelview%2C%20TX </a></div>')[0];
+                popup_8370828de80c41bd83021ab245ef8735.setContent(html_25a2c64de6e146d9a07d2d3331bdf1c7);
+            
+
+            marker_b326e38ccae7404fa87563696a17340d.bindPopup(popup_8370828de80c41bd83021ab245ef8735)
+            ;
+
+            
+        
+    
+        marker_b326e38ccae7404fa87563696a17340d.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_5fdd2672fd65408da5179af02cca57d4 = L.marker(
+            [29.7317165964288, -95.324433624223],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_a5118c7e943d4065b08d623308e832fc = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5fdd2672fd65408da5179af02cca57d4.setIcon(icon_a5118c7e943d4065b08d623308e832fc);
+            
+    
+            var popup_05c1ba1d1b3f4f4fad3ad4ebb30a8185 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_191fd6cde67a401dbedf650186aeb409 = $('<div id="html_191fd6cde67a401dbedf650186aeb409" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/8814530?location=Channelview%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/8814530?location=Channelview%2C%20TX </a></div>')[0];
+                popup_05c1ba1d1b3f4f4fad3ad4ebb30a8185.setContent(html_191fd6cde67a401dbedf650186aeb409);
+            
+
+            marker_5fdd2672fd65408da5179af02cca57d4.bindPopup(popup_05c1ba1d1b3f4f4fad3ad4ebb30a8185)
+            ;
+
+            
+        
+    
+        marker_5fdd2672fd65408da5179af02cca57d4.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_9c94753d5de2422892023b0c897eb7e1 = L.marker(
+            [29.748212002849698, -95.3194723751804],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_cfdf461c149f4387a326e87fde2fdba5 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9c94753d5de2422892023b0c897eb7e1.setIcon(icon_cfdf461c149f4387a326e87fde2fdba5);
+            
+    
+            var popup_9fd1238c28074e70b829a1a7036b633d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9bcc61d6f03a4faa8787b67d9f3b2454 = $('<div id="html_9bcc61d6f03a4faa8787b67d9f3b2454" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/8372908?location=Channelview%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/8372908?location=Channelview%2C%20TX </a></div>')[0];
+                popup_9fd1238c28074e70b829a1a7036b633d.setContent(html_9bcc61d6f03a4faa8787b67d9f3b2454);
+            
+
+            marker_9c94753d5de2422892023b0c897eb7e1.bindPopup(popup_9fd1238c28074e70b829a1a7036b633d)
+            ;
+
+            
+        
+    
+        marker_9c94753d5de2422892023b0c897eb7e1.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_576101286984434ebae297c688943fbb = L.marker(
+            [29.6971039373272, -95.4101240464601],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_f9d610445a6246889940931539a5bc0b = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_576101286984434ebae297c688943fbb.setIcon(icon_f9d610445a6246889940931539a5bc0b);
+            
+    
+            var popup_c9a49458562044ff8eac023e2d726afa = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2f62da2d7d184b40a210bbc8f06ff438 = $('<div id="html_2f62da2d7d184b40a210bbc8f06ff438" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/13941285?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/13941285?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_c9a49458562044ff8eac023e2d726afa.setContent(html_2f62da2d7d184b40a210bbc8f06ff438);
+            
+
+            marker_576101286984434ebae297c688943fbb.bindPopup(popup_c9a49458562044ff8eac023e2d726afa)
+            ;
+
+            
+        
+    
+        marker_576101286984434ebae297c688943fbb.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_fac9a1db337240b9b5e28a81b4812fa8 = L.marker(
+            [29.685789381464, -95.38735861273199],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_e1065d96d17348d2a67c6691625cd722 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fac9a1db337240b9b5e28a81b4812fa8.setIcon(icon_e1065d96d17348d2a67c6691625cd722);
+            
+    
+            var popup_a6b019c1853741c180a566c0a99c7a5a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_867000a278c64436ad8520e71eac85e0 = $('<div id="html_867000a278c64436ad8520e71eac85e0" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16407242?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/16407242?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_a6b019c1853741c180a566c0a99c7a5a.setContent(html_867000a278c64436ad8520e71eac85e0);
+            
+
+            marker_fac9a1db337240b9b5e28a81b4812fa8.bindPopup(popup_a6b019c1853741c180a566c0a99c7a5a)
+            ;
+
+            
+        
+    
+        marker_fac9a1db337240b9b5e28a81b4812fa8.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_9d5ca3afb7c1424d904a3ecaceab9b27 = L.marker(
+            [29.7545040403372, -95.3808689999459],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_10c3e28dcfbe4dae90f173ce6a997b69 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9d5ca3afb7c1424d904a3ecaceab9b27.setIcon(icon_10c3e28dcfbe4dae90f173ce6a997b69);
+            
+    
+            var popup_dd4fa8a3ba544c20ab47ba3a4730893e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_874c23dd7c954310a1f96170f16b02e4 = $('<div id="html_874c23dd7c954310a1f96170f16b02e4" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14141551?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/14141551?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_dd4fa8a3ba544c20ab47ba3a4730893e.setContent(html_874c23dd7c954310a1f96170f16b02e4);
+            
+
+            marker_9d5ca3afb7c1424d904a3ecaceab9b27.bindPopup(popup_dd4fa8a3ba544c20ab47ba3a4730893e)
+            ;
+
+            
+        
+    
+        marker_9d5ca3afb7c1424d904a3ecaceab9b27.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_9418eaddd75b4fc2a196d44d2b3dd329 = L.marker(
+            [29.748212002849698, -95.3194723751804],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_5f4ba941e770457b994547dc3402e0ee = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9418eaddd75b4fc2a196d44d2b3dd329.setIcon(icon_5f4ba941e770457b994547dc3402e0ee);
+            
+    
+            var popup_b5a1b24950c74df29f9608d780c4f06c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b0db3d9ab4a54c4fa7d9f9cf37c720db = $('<div id="html_b0db3d9ab4a54c4fa7d9f9cf37c720db" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/8372908?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/8372908?location=Baytown%2C%20TX </a></div>')[0];
+                popup_b5a1b24950c74df29f9608d780c4f06c.setContent(html_b0db3d9ab4a54c4fa7d9f9cf37c720db);
+            
+
+            marker_9418eaddd75b4fc2a196d44d2b3dd329.bindPopup(popup_b5a1b24950c74df29f9608d780c4f06c)
+            ;
+
+            
+        
+    
+        marker_9418eaddd75b4fc2a196d44d2b3dd329.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_8de9bc2934554ff7b7843865bfa4658f = L.marker(
+            [29.7315583514672, -95.32510035468141],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_2258e29018b64cb78e96a545a33665c5 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8de9bc2934554ff7b7843865bfa4658f.setIcon(icon_2258e29018b64cb78e96a545a33665c5);
+            
+    
+            var popup_828197735b3745c08975bd88994e252b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9cbd06c2d10247659e8bbd87e6287209 = $('<div id="html_9cbd06c2d10247659e8bbd87e6287209" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15550448?location=Channelview%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/15550448?location=Channelview%2C%20TX </a></div>')[0];
+                popup_828197735b3745c08975bd88994e252b.setContent(html_9cbd06c2d10247659e8bbd87e6287209);
+            
+
+            marker_8de9bc2934554ff7b7843865bfa4658f.bindPopup(popup_828197735b3745c08975bd88994e252b)
+            ;
+
+            
+        
+    
+        marker_8de9bc2934554ff7b7843865bfa4658f.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1344122bc3e54258bbb6e7c6cdcbcb77 = L.marker(
+            [29.747182013411898, -95.31849538720209],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_ffed25fd5190432db54b3a34513a4411 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1344122bc3e54258bbb6e7c6cdcbcb77.setIcon(icon_ffed25fd5190432db54b3a34513a4411);
+            
+    
+            var popup_09401ad487104976bcfba04364263522 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e42d24a731af4d1f881b445e6f4a0144 = $('<div id="html_e42d24a731af4d1f881b445e6f4a0144" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/6553780?location=Channelview%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/6553780?location=Channelview%2C%20TX </a></div>')[0];
+                popup_09401ad487104976bcfba04364263522.setContent(html_e42d24a731af4d1f881b445e6f4a0144);
+            
+
+            marker_1344122bc3e54258bbb6e7c6cdcbcb77.bindPopup(popup_09401ad487104976bcfba04364263522)
+            ;
+
+            
+        
+    
+        marker_1344122bc3e54258bbb6e7c6cdcbcb77.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_7fe7ee4a8c214f7b8009bda77b1565e2 = L.marker(
+            [29.7473537777671, -95.32015611877691],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_24621c08ddc6470cbe4b38cac20b3fbf = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7fe7ee4a8c214f7b8009bda77b1565e2.setIcon(icon_24621c08ddc6470cbe4b38cac20b3fbf);
+            
+    
+            var popup_35e0892504bb42b0b71d01fe7f1d04f8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_522bd1854fd349dc8ad6993487e4084e = $('<div id="html_522bd1854fd349dc8ad6993487e4084e" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/249741?location=Channelview%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/249741?location=Channelview%2C%20TX </a></div>')[0];
+                popup_35e0892504bb42b0b71d01fe7f1d04f8.setContent(html_522bd1854fd349dc8ad6993487e4084e);
+            
+
+            marker_7fe7ee4a8c214f7b8009bda77b1565e2.bindPopup(popup_35e0892504bb42b0b71d01fe7f1d04f8)
+            ;
+
+            
+        
+    
+        marker_7fe7ee4a8c214f7b8009bda77b1565e2.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_d7ab03c167c9497990f6ada3172088c0 = L.marker(
+            [29.6945216996035, -95.38849332943441],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_bcc8a16559ca4757bf389fd5fa97d9b5 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d7ab03c167c9497990f6ada3172088c0.setIcon(icon_bcc8a16559ca4757bf389fd5fa97d9b5);
+            
+    
+            var popup_74003a654af2450689931438a9be87d0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bf813a71d8004971abb9892bbd24a493 = $('<div id="html_bf813a71d8004971abb9892bbd24a493" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/18021177?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/18021177?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_74003a654af2450689931438a9be87d0.setContent(html_bf813a71d8004971abb9892bbd24a493);
+            
+
+            marker_d7ab03c167c9497990f6ada3172088c0.bindPopup(popup_74003a654af2450689931438a9be87d0)
+            ;
+
+            
+        
+    
+        marker_d7ab03c167c9497990f6ada3172088c0.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c3069d29ce74413ab22f61f16e349f04 = L.marker(
+            [29.699892495149, -95.418371478816],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_2fc97a716c5f4c9ebb4ca5f2131d467e = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c3069d29ce74413ab22f61f16e349f04.setIcon(icon_2fc97a716c5f4c9ebb4ca5f2131d467e);
+            
+    
+            var popup_9ab59e65ed1845518541ed5ce92f0f18 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e519501fc5724f03870dcc2e997e2713 = $('<div id="html_e519501fc5724f03870dcc2e997e2713" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15409458?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/15409458?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_9ab59e65ed1845518541ed5ce92f0f18.setContent(html_e519501fc5724f03870dcc2e997e2713);
+            
+
+            marker_c3069d29ce74413ab22f61f16e349f04.bindPopup(popup_9ab59e65ed1845518541ed5ce92f0f18)
+            ;
+
+            
+        
+    
+        marker_c3069d29ce74413ab22f61f16e349f04.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_f3bfde9ed28a4bf08d1d3ab85eac3f9e = L.marker(
+            [29.7430412857155, -95.417795791386],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_83363a62bdb343dcbcd708dc774cf19c = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f3bfde9ed28a4bf08d1d3ab85eac3f9e.setIcon(icon_83363a62bdb343dcbcd708dc774cf19c);
+            
+    
+            var popup_55ca2fab601c492ca91ec5e0c8bb9882 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_635e7fbfceeb49938039cdd793fa0446 = $('<div id="html_635e7fbfceeb49938039cdd793fa0446" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/13942184?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/13942184?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_55ca2fab601c492ca91ec5e0c8bb9882.setContent(html_635e7fbfceeb49938039cdd793fa0446);
+            
+
+            marker_f3bfde9ed28a4bf08d1d3ab85eac3f9e.bindPopup(popup_55ca2fab601c492ca91ec5e0c8bb9882)
+            ;
+
+            
+        
+    
+        marker_f3bfde9ed28a4bf08d1d3ab85eac3f9e.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c149c230e1fd4b2f91f02ddb5d455b23 = L.marker(
+            [29.7197296502041, -95.3756615226312],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_b045a93291c74840813ffd8e1b285f2c = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c149c230e1fd4b2f91f02ddb5d455b23.setIcon(icon_b045a93291c74840813ffd8e1b285f2c);
+            
+    
+            var popup_d3d7ba1689e74dedb346fbfbe7bfd2f0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4b308c595eb44c8b9704cdd97bc411f1 = $('<div id="html_4b308c595eb44c8b9704cdd97bc411f1" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/17142329?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/17142329?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_d3d7ba1689e74dedb346fbfbe7bfd2f0.setContent(html_4b308c595eb44c8b9704cdd97bc411f1);
+            
+
+            marker_c149c230e1fd4b2f91f02ddb5d455b23.bindPopup(popup_d3d7ba1689e74dedb346fbfbe7bfd2f0)
+            ;
+
+            
+        
+    
+        marker_c149c230e1fd4b2f91f02ddb5d455b23.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_7f4743a087394a0d857b4e7993f5de89 = L.marker(
+            [29.6977913184243, -95.38837692818069],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_84993ad140bb4910aeb36a2371ccb332 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7f4743a087394a0d857b4e7993f5de89.setIcon(icon_84993ad140bb4910aeb36a2371ccb332);
+            
+    
+            var popup_8e8b265fa83947a1b4b32f01fc51c235 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ad0d4a5792fa49b9b9022d3192b861fb = $('<div id="html_ad0d4a5792fa49b9b9022d3192b861fb" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15314833?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/15314833?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_8e8b265fa83947a1b4b32f01fc51c235.setContent(html_ad0d4a5792fa49b9b9022d3192b861fb);
+            
+
+            marker_7f4743a087394a0d857b4e7993f5de89.bindPopup(popup_8e8b265fa83947a1b4b32f01fc51c235)
+            ;
+
+            
+        
+    
+        marker_7f4743a087394a0d857b4e7993f5de89.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_28e8844f59f441989bb654618585fd91 = L.marker(
+            [29.7317165964288, -95.324433624223],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_e5d0f61a702a4d2ba6f6510478bad07f = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_28e8844f59f441989bb654618585fd91.setIcon(icon_e5d0f61a702a4d2ba6f6510478bad07f);
+            
+    
+            var popup_c03cb62cdec748e4b06fc7de5d4d4ab5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e8b2eb15e9a54d3c896e30fef7b8987a = $('<div id="html_e8b2eb15e9a54d3c896e30fef7b8987a" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/8814530?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/8814530?location=Baytown%2C%20TX </a></div>')[0];
+                popup_c03cb62cdec748e4b06fc7de5d4d4ab5.setContent(html_e8b2eb15e9a54d3c896e30fef7b8987a);
+            
+
+            marker_28e8844f59f441989bb654618585fd91.bindPopup(popup_c03cb62cdec748e4b06fc7de5d4d4ab5)
+            ;
+
+            
+        
+    
+        marker_28e8844f59f441989bb654618585fd91.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1dc75055413845549703f3704e0fd0a6 = L.marker(
+            [29.756655424383396, -95.34215110062759],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_4b0d633f9b5641f6ac174fc6713efdd4 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1dc75055413845549703f3704e0fd0a6.setIcon(icon_4b0d633f9b5641f6ac174fc6713efdd4);
+            
+    
+            var popup_c56f3790ab3a47d2bc35ce3d07432dcf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fe3aac29d60840aa83aeac45016a90bf = $('<div id="html_fe3aac29d60840aa83aeac45016a90bf" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16583494?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/16583494?location=Baytown%2C%20TX </a></div>')[0];
+                popup_c56f3790ab3a47d2bc35ce3d07432dcf.setContent(html_fe3aac29d60840aa83aeac45016a90bf);
+            
+
+            marker_1dc75055413845549703f3704e0fd0a6.bindPopup(popup_c56f3790ab3a47d2bc35ce3d07432dcf)
+            ;
+
+            
+        
+    
+        marker_1dc75055413845549703f3704e0fd0a6.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_d32cddae1abf49e58b267ae80e5c783c = L.marker(
+            [29.7197296502041, -95.3756615226312],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_6e72cc780df44686be246dd09b6eca5e = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d32cddae1abf49e58b267ae80e5c783c.setIcon(icon_6e72cc780df44686be246dd09b6eca5e);
+            
+    
+            var popup_9ee938b92bbb4c719585b8e030d0baa1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_326fe6c4fff842d785003ad1b11113ff = $('<div id="html_326fe6c4fff842d785003ad1b11113ff" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/17142329?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/17142329?location=Baytown%2C%20TX </a></div>')[0];
+                popup_9ee938b92bbb4c719585b8e030d0baa1.setContent(html_326fe6c4fff842d785003ad1b11113ff);
+            
+
+            marker_d32cddae1abf49e58b267ae80e5c783c.bindPopup(popup_9ee938b92bbb4c719585b8e030d0baa1)
+            ;
+
+            
+        
+    
+        marker_d32cddae1abf49e58b267ae80e5c783c.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_77b9abf126ef4f8bb24243da900af934 = L.marker(
+            [29.7656015283033, -95.37845293174891],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_dd0709b135c44b2fbfb68fae25b2d51b = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_77b9abf126ef4f8bb24243da900af934.setIcon(icon_dd0709b135c44b2fbfb68fae25b2d51b);
+            
+    
+            var popup_bb62a84fe8c54e678f867b23443016fb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fbbffc5e92c24e3daf879f17d5e98fd3 = $('<div id="html_fbbffc5e92c24e3daf879f17d5e98fd3" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16999950?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/16999950?location=Baytown%2C%20TX </a></div>')[0];
+                popup_bb62a84fe8c54e678f867b23443016fb.setContent(html_fbbffc5e92c24e3daf879f17d5e98fd3);
+            
+
+            marker_77b9abf126ef4f8bb24243da900af934.bindPopup(popup_bb62a84fe8c54e678f867b23443016fb)
+            ;
+
+            
+        
+    
+        marker_77b9abf126ef4f8bb24243da900af934.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_5f53b01650fa40688cdbe48e466e7118 = L.marker(
+            [29.753222959345603, -95.3342333909231],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_fa4320b1caaf4e50b76f0d8ee82494f3 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5f53b01650fa40688cdbe48e466e7118.setIcon(icon_fa4320b1caaf4e50b76f0d8ee82494f3);
+            
+    
+            var popup_a82c475dcca241e0a45d71827408dc3e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bf1e349ed3e14f5f8fe0a5702f8ebe74 = $('<div id="html_bf1e349ed3e14f5f8fe0a5702f8ebe74" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/17210169?location=Atascocita%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/17210169?location=Atascocita%2C%20TX </a></div>')[0];
+                popup_a82c475dcca241e0a45d71827408dc3e.setContent(html_bf1e349ed3e14f5f8fe0a5702f8ebe74);
+            
+
+            marker_5f53b01650fa40688cdbe48e466e7118.bindPopup(popup_a82c475dcca241e0a45d71827408dc3e)
+            ;
+
+            
+        
+    
+        marker_5f53b01650fa40688cdbe48e466e7118.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_02a553f08a534eb2ba9e6e5e5711f6d5 = L.marker(
+            [29.753222959345603, -95.3342333909231],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_91379fa0638141c0a2624a6088854456 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_02a553f08a534eb2ba9e6e5e5711f6d5.setIcon(icon_91379fa0638141c0a2624a6088854456);
+            
+    
+            var popup_2a4eb5a9ef58479bab6b91ff9a321f8f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1d403a8bef5240e3bcd4cc9dce64f3c2 = $('<div id="html_1d403a8bef5240e3bcd4cc9dce64f3c2" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/17210169?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/17210169?location=Baytown%2C%20TX </a></div>')[0];
+                popup_2a4eb5a9ef58479bab6b91ff9a321f8f.setContent(html_1d403a8bef5240e3bcd4cc9dce64f3c2);
+            
+
+            marker_02a553f08a534eb2ba9e6e5e5711f6d5.bindPopup(popup_2a4eb5a9ef58479bab6b91ff9a321f8f)
+            ;
+
+            
+        
+    
+        marker_02a553f08a534eb2ba9e6e5e5711f6d5.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_bfb242a6cbbf4803a7d6d5f1d4e0c84d = L.marker(
+            [29.686676655381103, -95.3972355240511],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_665e4e1b5e3045e3a59d2356f2ecc1d0 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bfb242a6cbbf4803a7d6d5f1d4e0c84d.setIcon(icon_665e4e1b5e3045e3a59d2356f2ecc1d0);
+            
+    
+            var popup_ac87a8ebaae94d06ae8a6a15a348f246 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_568b1bff5cec48429fb1e0bcb3ae30e3 = $('<div id="html_568b1bff5cec48429fb1e0bcb3ae30e3" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16054838?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/16054838?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_ac87a8ebaae94d06ae8a6a15a348f246.setContent(html_568b1bff5cec48429fb1e0bcb3ae30e3);
+            
+
+            marker_bfb242a6cbbf4803a7d6d5f1d4e0c84d.bindPopup(popup_ac87a8ebaae94d06ae8a6a15a348f246)
+            ;
+
+            
+        
+    
+        marker_bfb242a6cbbf4803a7d6d5f1d4e0c84d.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_5ba5087762b7485e85550979f5100cc6 = L.marker(
+            [29.6660419143343, -95.2960902198856],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_882b60c537c94ee0b9d74ed085ed7132 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5ba5087762b7485e85550979f5100cc6.setIcon(icon_882b60c537c94ee0b9d74ed085ed7132);
+            
+    
+            var popup_6cca5c3235f947d6a4240e2edf971cf0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0156766a325d4a48b0713ac7e720af7b = $('<div id="html_0156766a325d4a48b0713ac7e720af7b" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/17217137?location=Alvin%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/17217137?location=Alvin%2C%20TX </a></div>')[0];
+                popup_6cca5c3235f947d6a4240e2edf971cf0.setContent(html_0156766a325d4a48b0713ac7e720af7b);
+            
+
+            marker_5ba5087762b7485e85550979f5100cc6.bindPopup(popup_6cca5c3235f947d6a4240e2edf971cf0)
+            ;
+
+            
+        
+    
+        marker_5ba5087762b7485e85550979f5100cc6.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_9a51676db43a46b381a01822ef0aad32 = L.marker(
+            [29.7411677334555, -95.4156998914537],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_5b10146f979249d09ce5476e4c686ab9 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9a51676db43a46b381a01822ef0aad32.setIcon(icon_5b10146f979249d09ce5476e4c686ab9);
+            
+    
+            var popup_0bf035dc9ad1464a91d270650301f141 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c6bf2b169c7c426c8c468a6ff22be77e = $('<div id="html_c6bf2b169c7c426c8c468a6ff22be77e" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15112191?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/15112191?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_0bf035dc9ad1464a91d270650301f141.setContent(html_c6bf2b169c7c426c8c468a6ff22be77e);
+            
+
+            marker_9a51676db43a46b381a01822ef0aad32.bindPopup(popup_0bf035dc9ad1464a91d270650301f141)
+            ;
+
+            
+        
+    
+        marker_9a51676db43a46b381a01822ef0aad32.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_4e3e8e4ca88b41de8352728b51494917 = L.marker(
+            [29.6846881405718, -95.39903078032059],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_04144e7774a842eda9b4bca647990de8 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4e3e8e4ca88b41de8352728b51494917.setIcon(icon_04144e7774a842eda9b4bca647990de8);
+            
+    
+            var popup_51128de781254397a7be9ef1c0d2bb6e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_660ff46c79f547be8d8c9dc86f969c6f = $('<div id="html_660ff46c79f547be8d8c9dc86f969c6f" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/11515237?location=Bellaire%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/11515237?location=Bellaire%2C%20TX </a></div>')[0];
+                popup_51128de781254397a7be9ef1c0d2bb6e.setContent(html_660ff46c79f547be8d8c9dc86f969c6f);
+            
+
+            marker_4e3e8e4ca88b41de8352728b51494917.bindPopup(popup_51128de781254397a7be9ef1c0d2bb6e)
+            ;
+
+            
+        
+    
+        marker_4e3e8e4ca88b41de8352728b51494917.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1db4306de90941fb8c473e695a8c1f16 = L.marker(
+            [29.753222959345603, -95.3342333909231],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_0d3cec9ab144447688e674261033399a = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1db4306de90941fb8c473e695a8c1f16.setIcon(icon_0d3cec9ab144447688e674261033399a);
+            
+    
+            var popup_c9d85bec1a6343bb859a407fb9b9a6e5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_855441ead2ae48398814bf40b79bad01 = $('<div id="html_855441ead2ae48398814bf40b79bad01" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/17210169?location=Alvin%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/17210169?location=Alvin%2C%20TX </a></div>')[0];
+                popup_c9d85bec1a6343bb859a407fb9b9a6e5.setContent(html_855441ead2ae48398814bf40b79bad01);
+            
+
+            marker_1db4306de90941fb8c473e695a8c1f16.bindPopup(popup_c9d85bec1a6343bb859a407fb9b9a6e5)
+            ;
+
+            
+        
+    
+        marker_1db4306de90941fb8c473e695a8c1f16.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_f78229cc589345a0b11e8b90fc7d322f = L.marker(
+            [29.705823182086394, -95.41364837264679],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_1f889d4874a14f1ebf0416b664cbd365 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f78229cc589345a0b11e8b90fc7d322f.setIcon(icon_1f889d4874a14f1ebf0416b664cbd365);
+            
+    
+            var popup_caed08e19a6e46c4a848c3c3aed27afe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_df411743e8ff4f9cb663e80037cd070a = $('<div id="html_df411743e8ff4f9cb663e80037cd070a" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/18058914?location=Alvin%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/18058914?location=Alvin%2C%20TX </a></div>')[0];
+                popup_caed08e19a6e46c4a848c3c3aed27afe.setContent(html_df411743e8ff4f9cb663e80037cd070a);
+            
+
+            marker_f78229cc589345a0b11e8b90fc7d322f.bindPopup(popup_caed08e19a6e46c4a848c3c3aed27afe)
+            ;
+
+            
+        
+    
+        marker_f78229cc589345a0b11e8b90fc7d322f.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_421506c4cceb4523bab4e46abc42784b = L.marker(
+            [29.756655424383396, -95.34215110062759],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_e6f07639ba2d4d1c960564d20421ef71 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_421506c4cceb4523bab4e46abc42784b.setIcon(icon_e6f07639ba2d4d1c960564d20421ef71);
+            
+    
+            var popup_2ca6e02e86f7468c9ef37d89997150ce = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_487ac97ee8ce457290f3207142b1f2f5 = $('<div id="html_487ac97ee8ce457290f3207142b1f2f5" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16583494?location=Atascocita%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/16583494?location=Atascocita%2C%20TX </a></div>')[0];
+                popup_2ca6e02e86f7468c9ef37d89997150ce.setContent(html_487ac97ee8ce457290f3207142b1f2f5);
+            
+
+            marker_421506c4cceb4523bab4e46abc42784b.bindPopup(popup_2ca6e02e86f7468c9ef37d89997150ce)
+            ;
+
+            
+        
+    
+        marker_421506c4cceb4523bab4e46abc42784b.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_271b8b031b104fbf94ceee86559f4234 = L.marker(
+            [29.7552121678677, -95.38133652865109],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_fd6502b3612944d2b5f0aa061cb94e0b = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_271b8b031b104fbf94ceee86559f4234.setIcon(icon_fd6502b3612944d2b5f0aa061cb94e0b);
+            
+    
+            var popup_6d4594398365424bb4029fb22417a922 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_98b990c92bf34dea871301f8cab5da5c = $('<div id="html_98b990c92bf34dea871301f8cab5da5c" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14961842?location=Alvin%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/14961842?location=Alvin%2C%20TX </a></div>')[0];
+                popup_6d4594398365424bb4029fb22417a922.setContent(html_98b990c92bf34dea871301f8cab5da5c);
+            
+
+            marker_271b8b031b104fbf94ceee86559f4234.bindPopup(popup_6d4594398365424bb4029fb22417a922)
+            ;
+
+            
+        
+    
+        marker_271b8b031b104fbf94ceee86559f4234.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c6982f76d9eb46d5b8fab8d1afbf4fc1 = L.marker(
+            [29.6977913184243, -95.38837692818069],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_07dfec61343742f1a9a14c02efa64a25 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c6982f76d9eb46d5b8fab8d1afbf4fc1.setIcon(icon_07dfec61343742f1a9a14c02efa64a25);
+            
+    
+            var popup_7e54ad0f1ed149d7841832c3f4ad1636 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_76617bc406e6475689a37b4088ed399e = $('<div id="html_76617bc406e6475689a37b4088ed399e" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15314833?location=Alvin%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/15314833?location=Alvin%2C%20TX </a></div>')[0];
+                popup_7e54ad0f1ed149d7841832c3f4ad1636.setContent(html_76617bc406e6475689a37b4088ed399e);
+            
+
+            marker_c6982f76d9eb46d5b8fab8d1afbf4fc1.bindPopup(popup_7e54ad0f1ed149d7841832c3f4ad1636)
+            ;
+
+            
+        
+    
+        marker_c6982f76d9eb46d5b8fab8d1afbf4fc1.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_a16b7c156e55477cb925fbaf5a4569b4 = L.marker(
+            [29.6660419143343, -95.2960902198856],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_c8eb77e1891040f3ab533ac518a8a33f = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a16b7c156e55477cb925fbaf5a4569b4.setIcon(icon_c8eb77e1891040f3ab533ac518a8a33f);
+            
+    
+            var popup_904bb0a22a754604ac4e4afcbd81c5e7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_16b825e4c52e4e2e882c34949fbc7722 = $('<div id="html_16b825e4c52e4e2e882c34949fbc7722" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/17217137?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/17217137?location=Baytown%2C%20TX </a></div>')[0];
+                popup_904bb0a22a754604ac4e4afcbd81c5e7.setContent(html_16b825e4c52e4e2e882c34949fbc7722);
+            
+
+            marker_a16b7c156e55477cb925fbaf5a4569b4.bindPopup(popup_904bb0a22a754604ac4e4afcbd81c5e7)
+            ;
+
+            
+        
+    
+        marker_a16b7c156e55477cb925fbaf5a4569b4.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_4bc1905957464273b463715b37b9f462 = L.marker(
+            [29.7656015283033, -95.37845293174891],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_acb535d9b9ad43c39deb53f0fba85ca4 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4bc1905957464273b463715b37b9f462.setIcon(icon_acb535d9b9ad43c39deb53f0fba85ca4);
+            
+    
+            var popup_65db9a40650e431c831aa4605331d0ab = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c2ee86e4301a4c11a61038a7799851a0 = $('<div id="html_c2ee86e4301a4c11a61038a7799851a0" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16999950?location=Atascocita%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/16999950?location=Atascocita%2C%20TX </a></div>')[0];
+                popup_65db9a40650e431c831aa4605331d0ab.setContent(html_c2ee86e4301a4c11a61038a7799851a0);
+            
+
+            marker_4bc1905957464273b463715b37b9f462.bindPopup(popup_65db9a40650e431c831aa4605331d0ab)
+            ;
+
+            
+        
+    
+        marker_4bc1905957464273b463715b37b9f462.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_218bad59109045d084d4a1ae5aba6858 = L.marker(
+            [29.748212002849698, -95.3194723751804],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_92ae238e269e45eda40fb4f29e5b901c = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_218bad59109045d084d4a1ae5aba6858.setIcon(icon_92ae238e269e45eda40fb4f29e5b901c);
+            
+    
+            var popup_ac3cd49048f44d92b4b8d947c5b10f7f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_54bce224341a4b89a16ff7ce1202d4b4 = $('<div id="html_54bce224341a4b89a16ff7ce1202d4b4" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/8372908?location=Atascocita%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/8372908?location=Atascocita%2C%20TX </a></div>')[0];
+                popup_ac3cd49048f44d92b4b8d947c5b10f7f.setContent(html_54bce224341a4b89a16ff7ce1202d4b4);
+            
+
+            marker_218bad59109045d084d4a1ae5aba6858.bindPopup(popup_ac3cd49048f44d92b4b8d947c5b10f7f)
+            ;
+
+            
+        
+    
+        marker_218bad59109045d084d4a1ae5aba6858.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_5113b3cb306c442ea3b31d1be25f1460 = L.marker(
+            [29.7545040403372, -95.3808689999459],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_67eed6c2f45c4f0e845b6a703266b9b6 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5113b3cb306c442ea3b31d1be25f1460.setIcon(icon_67eed6c2f45c4f0e845b6a703266b9b6);
+            
+    
+            var popup_a37fe438588c452988583154a17eb9d3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_de20aedf97f1445794352408b74c4a2e = $('<div id="html_de20aedf97f1445794352408b74c4a2e" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14141551?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/14141551?location=Baytown%2C%20TX </a></div>')[0];
+                popup_a37fe438588c452988583154a17eb9d3.setContent(html_de20aedf97f1445794352408b74c4a2e);
+            
+
+            marker_5113b3cb306c442ea3b31d1be25f1460.bindPopup(popup_a37fe438588c452988583154a17eb9d3)
+            ;
+
+            
+        
+    
+        marker_5113b3cb306c442ea3b31d1be25f1460.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_6f5d7770eef344f6a2348b6c3bda0904 = L.marker(
+            [29.712825988212398, -95.3421163946509],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_a82fec364e0b451d87eaf3a8f19d99bd = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6f5d7770eef344f6a2348b6c3bda0904.setIcon(icon_a82fec364e0b451d87eaf3a8f19d99bd);
+            
+    
+            var popup_03f8fc6bf3ca468ebf2c9995d621e2ea = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4fb1b9835dc64315960f5e5d4f6550e9 = $('<div id="html_4fb1b9835dc64315960f5e5d4f6550e9" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16114793?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/16114793?location=Baytown%2C%20TX </a></div>')[0];
+                popup_03f8fc6bf3ca468ebf2c9995d621e2ea.setContent(html_4fb1b9835dc64315960f5e5d4f6550e9);
+            
+
+            marker_6f5d7770eef344f6a2348b6c3bda0904.bindPopup(popup_03f8fc6bf3ca468ebf2c9995d621e2ea)
+            ;
+
+            
+        
+    
+        marker_6f5d7770eef344f6a2348b6c3bda0904.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_952c6bc0d97049c58ab1c9153511b5cd = L.marker(
+            [29.6945216996035, -95.38849332943441],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_26679a3e9e54443cb922793a4af7dac4 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_952c6bc0d97049c58ab1c9153511b5cd.setIcon(icon_26679a3e9e54443cb922793a4af7dac4);
+            
+    
+            var popup_d8b114693fd8436a84bae84b54182f9f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4602cdfec7aa467587ceb92c69258271 = $('<div id="html_4602cdfec7aa467587ceb92c69258271" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/18021177?location=Alvin%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/18021177?location=Alvin%2C%20TX </a></div>')[0];
+                popup_d8b114693fd8436a84bae84b54182f9f.setContent(html_4602cdfec7aa467587ceb92c69258271);
+            
+
+            marker_952c6bc0d97049c58ab1c9153511b5cd.bindPopup(popup_d8b114693fd8436a84bae84b54182f9f)
+            ;
+
+            
+        
+    
+        marker_952c6bc0d97049c58ab1c9153511b5cd.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_838eed5f10f24fd68820bf2a3e7afef4 = L.marker(
+            [29.7757995589192, -95.3752009806184],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_620fb6ed992e4049af4810962d29efe8 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_838eed5f10f24fd68820bf2a3e7afef4.setIcon(icon_620fb6ed992e4049af4810962d29efe8);
+            
+    
+            var popup_a2a09917fe49483eaaa483bb7ca6445c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_821ca8ee7e5b47efb0602aa3eba57c3b = $('<div id="html_821ca8ee7e5b47efb0602aa3eba57c3b" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/18645336?location=Atascocita%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/18645336?location=Atascocita%2C%20TX </a></div>')[0];
+                popup_a2a09917fe49483eaaa483bb7ca6445c.setContent(html_821ca8ee7e5b47efb0602aa3eba57c3b);
+            
+
+            marker_838eed5f10f24fd68820bf2a3e7afef4.bindPopup(popup_a2a09917fe49483eaaa483bb7ca6445c)
+            ;
+
+            
+        
+    
+        marker_838eed5f10f24fd68820bf2a3e7afef4.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_4200bcd3bbfd4131a63f3928d169a38e = L.marker(
+            [29.7315583514672, -95.32510035468141],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_58c26b7f87c94820bd41e618cacd801f = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4200bcd3bbfd4131a63f3928d169a38e.setIcon(icon_58c26b7f87c94820bd41e618cacd801f);
+            
+    
+            var popup_087f80fae2ca4f9092519b77b25f0482 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1b47b0c613424eb89c0815f6bb71f531 = $('<div id="html_1b47b0c613424eb89c0815f6bb71f531" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15550448?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/15550448?location=Baytown%2C%20TX </a></div>')[0];
+                popup_087f80fae2ca4f9092519b77b25f0482.setContent(html_1b47b0c613424eb89c0815f6bb71f531);
+            
+
+            marker_4200bcd3bbfd4131a63f3928d169a38e.bindPopup(popup_087f80fae2ca4f9092519b77b25f0482)
+            ;
+
+            
+        
+    
+        marker_4200bcd3bbfd4131a63f3928d169a38e.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_f8cad9b232c4459bbed18c7b3d1bfdf4 = L.marker(
+            [29.6945216996035, -95.38849332943441],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_6a7b22ea1df148bebada179d841fbf5a = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f8cad9b232c4459bbed18c7b3d1bfdf4.setIcon(icon_6a7b22ea1df148bebada179d841fbf5a);
+            
+    
+            var popup_a2dec566b2024d06be1d6b3d69e21105 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4c525108c74b403fb0f43a2055935ea7 = $('<div id="html_4c525108c74b403fb0f43a2055935ea7" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/18021177?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/18021177?location=Baytown%2C%20TX </a></div>')[0];
+                popup_a2dec566b2024d06be1d6b3d69e21105.setContent(html_4c525108c74b403fb0f43a2055935ea7);
+            
+
+            marker_f8cad9b232c4459bbed18c7b3d1bfdf4.bindPopup(popup_a2dec566b2024d06be1d6b3d69e21105)
+            ;
+
+            
+        
+    
+        marker_f8cad9b232c4459bbed18c7b3d1bfdf4.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_f59545ae94d8429499f2ca477ea28b65 = L.marker(
+            [29.712825988212398, -95.3421163946509],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_258c27af5c454cf9aadac265b79ecfe4 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f59545ae94d8429499f2ca477ea28b65.setIcon(icon_258c27af5c454cf9aadac265b79ecfe4);
+            
+    
+            var popup_56b9081c370648bbbdcb9095c48cc790 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b8ebe47e493641598343aa12c3538cc3 = $('<div id="html_b8ebe47e493641598343aa12c3538cc3" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16114793?location=Alvin%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/16114793?location=Alvin%2C%20TX </a></div>')[0];
+                popup_56b9081c370648bbbdcb9095c48cc790.setContent(html_b8ebe47e493641598343aa12c3538cc3);
+            
+
+            marker_f59545ae94d8429499f2ca477ea28b65.bindPopup(popup_56b9081c370648bbbdcb9095c48cc790)
+            ;
+
+            
+        
+    
+        marker_f59545ae94d8429499f2ca477ea28b65.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_6bba50aa342b4cfe9e64f832089e953a = L.marker(
+            [29.7507481273452, -95.34822054658159],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_7e86b71947854af79211e1fdc5537143 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6bba50aa342b4cfe9e64f832089e953a.setIcon(icon_7e86b71947854af79211e1fdc5537143);
+            
+    
+            var popup_e19919c4847a4165b234ee6949bb5c25 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_58d92cab042944faa2b35a7b7e2737f5 = $('<div id="html_58d92cab042944faa2b35a7b7e2737f5" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16578645?location=Alvin%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/16578645?location=Alvin%2C%20TX </a></div>')[0];
+                popup_e19919c4847a4165b234ee6949bb5c25.setContent(html_58d92cab042944faa2b35a7b7e2737f5);
+            
+
+            marker_6bba50aa342b4cfe9e64f832089e953a.bindPopup(popup_e19919c4847a4165b234ee6949bb5c25)
+            ;
+
+            
+        
+    
+        marker_6bba50aa342b4cfe9e64f832089e953a.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_8767d8b21b644c6b9a182cf9cd890e4a = L.marker(
+            [29.7545040403372, -95.3808689999459],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_a0743b51e38b4367978deb85e07316ab = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8767d8b21b644c6b9a182cf9cd890e4a.setIcon(icon_a0743b51e38b4367978deb85e07316ab);
+            
+    
+            var popup_73352e5514a6475eb176ffb09e3d4318 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_aaebf64a67854c6d89802db93a50f600 = $('<div id="html_aaebf64a67854c6d89802db93a50f600" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14141551?location=Alvin%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/14141551?location=Alvin%2C%20TX </a></div>')[0];
+                popup_73352e5514a6475eb176ffb09e3d4318.setContent(html_aaebf64a67854c6d89802db93a50f600);
+            
+
+            marker_8767d8b21b644c6b9a182cf9cd890e4a.bindPopup(popup_73352e5514a6475eb176ffb09e3d4318)
+            ;
+
+            
+        
+    
+        marker_8767d8b21b644c6b9a182cf9cd890e4a.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_086ad0cdd53446af93116d9680f5d7c1 = L.marker(
+            [29.7507481273452, -95.34822054658159],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_46a02e5cd1fa4b4bbd218075f86c0613 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_086ad0cdd53446af93116d9680f5d7c1.setIcon(icon_46a02e5cd1fa4b4bbd218075f86c0613);
+            
+    
+            var popup_56fe1aa918414609b80fd459ce11a007 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_09c6aef402e34cb299dd15a17d74b344 = $('<div id="html_09c6aef402e34cb299dd15a17d74b344" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16578645?location=Atascocita%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/16578645?location=Atascocita%2C%20TX </a></div>')[0];
+                popup_56fe1aa918414609b80fd459ce11a007.setContent(html_09c6aef402e34cb299dd15a17d74b344);
+            
+
+            marker_086ad0cdd53446af93116d9680f5d7c1.bindPopup(popup_56fe1aa918414609b80fd459ce11a007)
+            ;
+
+            
+        
+    
+        marker_086ad0cdd53446af93116d9680f5d7c1.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1ab95d470cb3439eae9fbbc7f2c24f12 = L.marker(
+            [29.7315583514672, -95.32510035468141],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_0882edd469ce4795970b4f4c431021ce = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1ab95d470cb3439eae9fbbc7f2c24f12.setIcon(icon_0882edd469ce4795970b4f4c431021ce);
+            
+    
+            var popup_7b78d42eb1b046aeb8d7f47a90dca9ed = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b5eb6249fb5340c286a8637a5f9bbefc = $('<div id="html_b5eb6249fb5340c286a8637a5f9bbefc" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15550448?location=Alvin%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/15550448?location=Alvin%2C%20TX </a></div>')[0];
+                popup_7b78d42eb1b046aeb8d7f47a90dca9ed.setContent(html_b5eb6249fb5340c286a8637a5f9bbefc);
+            
+
+            marker_1ab95d470cb3439eae9fbbc7f2c24f12.bindPopup(popup_7b78d42eb1b046aeb8d7f47a90dca9ed)
+            ;
+
+            
+        
+    
+        marker_1ab95d470cb3439eae9fbbc7f2c24f12.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_0f4f6821f60b43ebaef5eb8155bacb29 = L.marker(
+            [29.732658248299103, -95.3250448537964],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_46a6c401f0b04d799c6f28a239995a70 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0f4f6821f60b43ebaef5eb8155bacb29.setIcon(icon_46a6c401f0b04d799c6f28a239995a70);
+            
+    
+            var popup_525e26e87bb74c599776a144d4cb0329 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8b4b16c654524f20855b09a5bf9c0aac = $('<div id="html_8b4b16c654524f20855b09a5bf9c0aac" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15181769?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/15181769?location=Baytown%2C%20TX </a></div>')[0];
+                popup_525e26e87bb74c599776a144d4cb0329.setContent(html_8b4b16c654524f20855b09a5bf9c0aac);
+            
+
+            marker_0f4f6821f60b43ebaef5eb8155bacb29.bindPopup(popup_525e26e87bb74c599776a144d4cb0329)
+            ;
+
+            
+        
+    
+        marker_0f4f6821f60b43ebaef5eb8155bacb29.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_8024c60b8264402da3289565a91106e8 = L.marker(
+            [29.732658248299103, -95.3250448537964],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_3627569eb3f94d1c92f60ad4f9f1df4e = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8024c60b8264402da3289565a91106e8.setIcon(icon_3627569eb3f94d1c92f60ad4f9f1df4e);
+            
+    
+            var popup_518e84eeb8a94214b4075e7d101ac345 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_284420415d7a4d80a530ed73a81e5bfc = $('<div id="html_284420415d7a4d80a530ed73a81e5bfc" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15181769?location=Alvin%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/15181769?location=Alvin%2C%20TX </a></div>')[0];
+                popup_518e84eeb8a94214b4075e7d101ac345.setContent(html_284420415d7a4d80a530ed73a81e5bfc);
+            
+
+            marker_8024c60b8264402da3289565a91106e8.bindPopup(popup_518e84eeb8a94214b4075e7d101ac345)
+            ;
+
+            
+        
+    
+        marker_8024c60b8264402da3289565a91106e8.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_05e8dc5e18a04a71ab108871d715c8b7 = L.marker(
+            [29.7552121678677, -95.38133652865109],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_cd2ef6f7e3264f83bc3f6bbb4a781a6c);
+        
+    
+
+                var icon_0d31f80360b84905b7b89d969675e58c = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_05e8dc5e18a04a71ab108871d715c8b7.setIcon(icon_0d31f80360b84905b7b89d969675e58c);
+            
+    
+            var popup_f125833cc7f54883aa52a6b64b5b96d3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e0cf7baffd8346cd861a3b74c1b5882a = $('<div id="html_e0cf7baffd8346cd861a3b74c1b5882a" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14961842?location=Baytown%2C%20TXtarget="_blank">https://www.airbnb.com/rooms/14961842?location=Baytown%2C%20TX </a></div>')[0];
+                popup_f125833cc7f54883aa52a6b64b5b96d3.setContent(html_e0cf7baffd8346cd861a3b74c1b5882a);
+            
+
+            marker_05e8dc5e18a04a71ab108871d715c8b7.bindPopup(popup_f125833cc7f54883aa52a6b64b5b96d3)
+            ;
+
+            
+        
+    
+        marker_05e8dc5e18a04a71ab108871d715c8b7.bindTooltip(
+            '<div>'
+            + 'Click for link!' + '</div>',
+            {"sticky": true}
+        );
+        
+</script>
