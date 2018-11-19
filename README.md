@@ -1,7 +1,7 @@
 # ADM-Group27-HW3
 # Find the best place to live in Texas!
 
-The proposed scripts allow you to find for houses in Texas listed on AirBnb Database.
+The proposed scripts allow you to search for houses in Texas listed on AirBnb Database.
 
 ## Get data to analyze
 
