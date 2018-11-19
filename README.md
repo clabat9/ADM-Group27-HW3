@@ -3,7 +3,9 @@
 
 The proposed scripts allow you to search for houses in Texas listed on AirBnb Database.
 
-## Get data to analyze
+NB : we suggest to download the notebook file because html doesn't work well with the rendering of some latex formulas and pandas DataFrames. 
+
+## Get data to analyze 
 
 The data in usage are available on [Kaggle AirBnb Data](https://www.kaggle.com/PromptCloudHQ/airbnb-property-data-from-texas). 
 They're a .csv file well organized with so many interesting features. 
