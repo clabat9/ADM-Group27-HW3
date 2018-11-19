@@ -15,13 +15,13 @@ They're a .csv file well organized with so many interesting features.
 
 2. __`Example_map.html`__: 
 	This html files contains a Texas map that higlights the houses searched by the user in an example query.
-3. __`Useful_data`__: 
+3. __`Useful_data.rar`__: 
 	This folder contains some fundamental files in order to let the user launching the function without recreating the file.
   This files are :
   - The inverted index of the corpus ({term : [docs where the term appears]})
   - The inverted index with TFIDF of the corpus ({term : [(doc where the term appears,TFID(term,doc)), ...]})
   - The vocabulary of the corpus : ({term : term_id})
   
-## `IPython Notebook: Homework3_final.ipynb`
+## `IPython Notebook: Homework3_final.ipynb (contained in .rar file)`
 The goal of the `Notebook` is to provide a storytelling friendly format that shows how to use the implemented code and to carry out the reesults. It provides explanations and examples.
 We tried to organize it in a way the reader can follow our logic and conlcusions.
