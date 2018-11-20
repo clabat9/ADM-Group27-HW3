@@ -24,6 +24,6 @@ They're a .csv file well organized with so many interesting features.
   - The inverted index with TFIDF of the corpus ({term : [(doc where the term appears,TFID(term,doc)), ...]})
   - The vocabulary of the corpus : ({term : term_id})
   
-## `IPython Notebook: Homework3_final.ipynb (contained in .rar file)`
+## `IPython Notebook: Homework3_final.ipynb `
 The goal of the `Notebook` is to provide a storytelling friendly format that shows how to use the implemented code and to carry out the reesults. It provides explanations and examples.
 We tried to organize it in a way the reader can follow our logic and conlcusions.
