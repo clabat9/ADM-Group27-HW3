@@ -15,7 +15,7 @@ They're a .csv file well organized with so many interesting features.
 ## Script and Other files descriptions
 
 1. __`Hw3_lib.py`__: 
-	This script contains all the useful functions to get the proposed analysis deeply commented to have a clear view of the logic behind.
+	This script contains all the useful functions to get the proposed requests, deeply commented to have a clear view of the logic behind.
 
 2. __`Example_map.html`__: 
 	This html files contains a Texas map that higlights the houses searched by the user in an example query.
