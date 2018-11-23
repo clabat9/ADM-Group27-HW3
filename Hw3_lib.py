@@ -439,7 +439,7 @@ def first_search_engine(inverted_index, path):
             complete_results =  pd.concat(res).reset_index() # And then concatenates all of them
             
             # Takes only requested features and makes some operations to have a better visualization and clean up some junks
-            results = complete_results.loc[:,["title","description","city","url"]]
+            results = complete_results.loc[:,["title","description","city","url","bedrooms_count","average_rate_per_night"]]
             results.columns = map(str.upper, results.columns) 
             results["TITLE"] = results["TITLE"].apply(lambda x : re.sub(r"\\n"," ",x))
             results["DESCRIPTION"] = results["DESCRIPTION"].apply(lambda x : re.sub(r"\\n"," ",x))
@@ -514,7 +514,7 @@ def our_search_engine(inverted_index, path, k = 10):
                                                                         # containig the scores and the indices of the row of the df associated to that score
         heapq._heapify_max(scores) # Creates a max heap based on the scores in "scores"
         res =  heapq.nlargest(k, scores, key=lambda x: x[0]) # Get the first k highest score elements of "scores"
-        return results.iloc[[res[j][1] for j in range(len(res))]].style.hide_index()
+        return results.iloc[[res[j][1] for j in range(len(res))]]
     
     
     
