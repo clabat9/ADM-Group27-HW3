@@ -5,7 +5,7 @@
 
 The proposed scripts allow you to search for houses in Texas listed on AirBnb Database.
 
-NB : we suggest to download the notebook file because html doesn't work well with the rendering of some latex formulas and pandas DataFrames. 
+**NB** : we suggest to **download the notebook file** because html doesn't work well with the rendering of some latex formulas and pandas DataFrames. 
 
 ## Get data to analyze 
 
